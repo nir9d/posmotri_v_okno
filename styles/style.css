@@ -3,11 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
-
 html {
   block-size: 100%;
 }
-
 .page {
   display: flex;
   align-items: center;
@@ -15,12 +13,11 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", Impact, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   margin: auto;
 }
-
 h1,
 h2,
 h3,
@@ -34,7 +31,6 @@ fieldset {
   margin: 0;
   padding: 0;
 }
-
 ul,
 ol {
   list-style: none;
@@ -98,9 +94,10 @@ ol {
 }
 .content__list {
   position: relative;
+  block-size: 298px;
 }
 .search-form__fieldset-title {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", Impact, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -109,12 +106,13 @@ ol {
 }
 .title {
   padding-bottom: 26px;
-  font-family: "Oswald";
+  font-family: "Oswald", Impact, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
   line-height: 70px;
   text-transform: uppercase;
+  position: relative;
 }
 .content__accent {
   color: #545050;
@@ -155,8 +153,7 @@ ol {
   border-right: 0;
   border-left: 0;
   appearance: none;
-
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", Impact, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -177,7 +174,7 @@ ol {
   background: transparent;
   border: 1px solid #fff;
   cursor: pointer;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", Impact, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -203,6 +200,10 @@ ol {
 }
 .more-button {
   width: 100%;
+}
+.more-button:focus-visible {
+  outline:1px solid #fff;
+  outline-offset:-4px;
 }
 .search-form__submit-button {
   width: 100%;
@@ -242,7 +243,7 @@ ol {
   background: #545050;
 }
 .content__video-card-description {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", Impact, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -250,7 +251,7 @@ ol {
   color: #ffffff;
 }
 .content__video-card-title {
-  font-family: "Oswald";
+  font-family: "Oswald", Impact, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -258,4 +259,7 @@ ol {
   text-transform: uppercase;
   color: #ffffff;
   padding-bottom: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
